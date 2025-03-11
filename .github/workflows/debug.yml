@@ -5,19 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch:
-
+       
 jobs:
-  debug:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
-
-      - name: Debug Files in Templates
-        run: ls -l templates/
-
-      - name: Debug Full Directory Structure
-        run: treejobs:
   debug:
     runs-on: ubuntu-latest
     steps:
@@ -28,5 +17,5 @@ jobs:
         run: pwd && ls -l
 
       - name: Debug Files in Templates
-        run: ls -l pru_calculator/templates/  # Pastikan ini direktori betul
+        run: ls -l pru_calculator/templates/  
 
